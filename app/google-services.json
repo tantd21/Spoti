@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "689073543503",
+    "firebase_url": "https://spoti-60ffd-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "spoti-60ffd",
+    "storage_bucket": "spoti-60ffd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689073543503:android:f89a09c9b023c04fd9cd3a",
+        "android_client_info": {
+          "package_name": "com.example.spoti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689073543503-qp5vgrmnn5ko39q0sfl0ne3fo3fpd5re.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ3rnFRduf8ynhLF4hWiefLp_VjI_KO1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689073543503-qp5vgrmnn5ko39q0sfl0ne3fo3fpd5re.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

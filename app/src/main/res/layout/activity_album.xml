@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".AlbumActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:weightSum="5"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="Profile Picture"
+            android:src="@drawable/img_spotify_main" />
+
+        <TextView
+            android:id="@+id/text_view_greeting"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center|start"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:text="Yours Album"
+            android:textColor="#1DB954"
+            android:textSize="20sp" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_view_bell"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="?android:attr/actionModeWebSearchDrawable"
+            android:tint="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/add_album"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/ic_plus"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout_top_bar">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/playlists_button"
+            style="@style/library_button_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gender_button"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:text="Playlists" />
+
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="0dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/artists_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gender_button"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:text="Artists"
+            style="@style/library_button_text_style"/>
+
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="0dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/downloaded_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gender_button"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:text="albums"
+            style="@style/library_button_text_style"/>
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_library"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="16dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

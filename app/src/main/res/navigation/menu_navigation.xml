@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_navigation"
+    app:startDestination="@id/loginActivity">
+
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.spoti.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/registerActivity"
+        android:name="com.example.spoti.RegisterActivity"
+        android:label="activity_register"
+        tools:layout="@layout/activity_register" />
+    <activity
+        android:id="@+id/albumActivity"
+        android:name="com.example.spoti.AlbumActivity"
+        android:label="activity_album"
+        tools:layout="@layout/activity_album" />
+    <activity
+        android:id="@+id/playMusic"
+        android:name="com.example.spoti.PlayMusic"
+        android:label="activity_play_music"
+        tools:layout="@layout/activity_play_music" />
+</navigation>

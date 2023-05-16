@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertMusic">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#D3D3D3"
+        android:scaleType="centerCrop" />
+    <Button
+        android:id="@+id/select_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn file hình ảnh"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/select_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:text="Chọn file âm thanh" />
+
+    <TextView
+        android:id="@+id/file_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chưa chọn file"
+        android:textColor="#A9A9A9"
+        android:layout_below="@+id/select_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/song_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/file_name"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginRight="16dp"
+        android:hint="Tên bài hát"
+        android:inputType="text"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/artist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/song_title"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginRight="16dp"
+        android:hint="Nghệ sĩ"
+        android:inputType="text"
+        android:maxLines="1" />
+
+    <Button
+        android:id="@+id/upload_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tải lên Firebase"
+        android:layout_below="@+id/artist"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>
